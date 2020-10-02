@@ -17,15 +17,29 @@ body,
     "footer";
   grid-template-rows: 5rem 1fr 5rem;
   grid-template-columns: 1fr;
+  height: 100%;
+}
+a:hover {
+  color: #ff8000;
+}
+body,
+input,
+select,
+textarea {
+  font-size: 1.6rem;
+  font-family: helvetica, Arial, sans-serif;
 }
 
 header {
   grid-area: header;
   background-color: #203040;
   color: #ffffff;
+  display: flex;
+  align-items: center;
 }
 header a {
   color: #ffffff;
+  text-decoration: none;
 }
 main {
   grid-area: main;
@@ -34,4 +48,7 @@ footer {
   grid-area: footer;
   background-color: #203040;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
